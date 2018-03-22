@@ -6,19 +6,17 @@
 
 
   
-   `  gcloud compute --your-project-id networks create subnet-east-1 --mode=custom
+   ```gcloud compute --your-project-id networks create subnet-east-1 --mode=custom
     
-    
-    #this command creates the subnet-east-vpn subnet with a region us west 1 with a subnetrange.  
-    
- gcloud compute --your-project-id networks subnets create subnet-east-vpn --network=subnet-east-1 --region=us-west1 --range=10.128.0.0/20 `
+     gcloud compute --your-project-id networks subnets create subnet-east-vpn --network=subnet-east-1 --region=us-west1 --range=10.128.0.0/20 ```
+ 
 
 
 
 2. this firewall rule creates the subnet name “subnet-west-secure” the direction is ingress meaning the traffic that is allowed in. as you can see we created a firewall rule specifying the network as subnet-demo-gcp, followed by the allowed ports ssh, http
 
 
-   ``` gcloud compute --your-project-id firewall-rules create subnet-west-secure --direction=INGRESS --priority=1000 --network=subnet-demo-gcp --action=ALLOW --rules=tcp:22,tcp80 --source-ranges=10.138.0.0/20 ```
+   ```gcloud compute --your-project-id firewall-rules create subnet-west-secure --direction=INGRESS --priority=1000 --network=subnet-demo-gcp --action=ALLOW --rules=tcp:22,tcp80 --source-ranges=10.138.0.0/20 ```
 
 
 
