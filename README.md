@@ -8,7 +8,7 @@
   
    `gcloud compute --your-project-id networks create subnet-east-1 --mode=custom
     
-     gcloud compute --your-project-id networks subnets create subnet-east-vpn --network=subnet-east-1 --region=us-west1 --range=10.128.0.0/20 `
+     gcloud compute --your-project-id networks subnets create subnet-east-vpn --network=subnet-east-1 --region=us-west1 --range=10.128.0.0/20`
  
 
 
