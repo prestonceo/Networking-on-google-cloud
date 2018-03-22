@@ -11,7 +11,7 @@ gcloud compute --your-project-id networks create subnet-east-1 --mode=custom
 ```
 
 ```
-#this command creates the subnet-east-vpn subnet with a region us west 1 with a subnetrange
+#this command creates the subnet-east-vpn subnet with a region us west 1 with a subnet address range specified
 gcloud compute --your-project-id networks subnets create subnet-east-vpn --network=subnet-east-1 --region=us-west1 --range=10.128.0.0/20
 
 ```
