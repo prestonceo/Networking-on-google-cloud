@@ -16,7 +16,7 @@
 2. this firewall rule creates the subnet name “subnet-west-secure” the direction is ingress meaning the traffic that is allowed in. as you can see we created a firewall rule specifying the network as subnet-demo-gcp, followed by the allowed ports ssh, http
 
 
-   ```gcloud compute --your-project-id firewall-rules create subnet-west-secure --direction=INGRESS --priority=1000 --network=subnet-demo-gcp --action=ALLOW --rules=tcp:22,tcp80 --source-ranges=10.138.0.0/20 ```
+   ```gcloud compute --your-project-id firewall-rules create subnet-west-secure --direction=INGRESS --priority=1000 --network=subnet-demo-gcp --action=ALLOW --rules=tcp:22,tcp80 --source-ranges=10.138.0.0/20```
 
 
 
