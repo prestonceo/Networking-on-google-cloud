@@ -42,9 +42,9 @@ gcloud compute --your-project-id firewall-rules create subnet-west-secure --dire
     
  ```
  
- #understanding the basics 
+ # understanding the basics 
  
-Networks can contain one or more subnets in any given region, when using custom mode this goves you control over the subnet region instead of GCP choosing the region for you. this may seem basic but can become really confusing when launching 100s of machines. 
+Networks can contain one or more subnets in any given region, when using custom mode this goves you control over the subnet region instead of GCP choosing the region for you. 
  
 when creating a subnet you must choose the lowest subnet for the mask, but don't worry google requires this but you must know what the lowest subnet is for the mask you choose. 
  
