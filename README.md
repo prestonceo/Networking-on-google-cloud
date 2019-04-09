@@ -8,19 +8,19 @@ Creating a subnet with a address range, the first command creates the name of th
 
 
 ```
-# this command creates the name of the network and the subnet mode to custom 
+# creates the name of the network and the subnet mode to custom 
 gcloud compute --your-project-id networks create subnet-east-1 --mode=custom
     
 ```
 
 ```
-#this command creates the subnet-east-vpn subnet with a region us west 1 with a subnet address range specified
+# creates the subnet-east-vpn subnet with a region us west 1 with a subnet address range specified
 gcloud compute --your-project-id networks subnets create subnet-east-vpn --network=subnet-east-1 --region=us-west1 --range=10.128.0.0/20
 
 ```
  
 
-this firewall rule creates the subnet name “subnet-west-secure” the direction is ingress meaning the traffic that is allowed in. as you can see we created a firewall rule specifying the network as subnet-demo-gcp, followed by the allowed ports ssh, http
+firewall rule creates the subnet name “subnet-west-secure” the direction is ingress meaning the traffic that is allowed in. as you can see we created a firewall rule specifying the network as subnet-demo-gcp, followed by the allowed ports ssh, http
 
 
 ```
